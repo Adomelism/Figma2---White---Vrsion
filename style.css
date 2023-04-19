@@ -1,0 +1,372 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1270px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 70px;
+}
+
+.burger {
+  display: none;
+  margin-top: 10px;
+  width: 24px;
+  height: 22px;
+  background: transparent;
+  background-image: url(./burger-logo.svg);
+  border: 0;
+}
+
+.header-navigation a {
+  text-decoration: none;
+  list-style-type: none;
+  color: #555555;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: Inter;
+}
+
+.navpink a {
+  color: #ff3998;
+}
+
+.header-navigation ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding-left: 28px;
+}
+
+.main-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-content {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.status {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ff3998;
+}
+
+h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  color: #111111;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #555555;
+  margin-bottom: 41px;
+}
+
+.button {
+  border-radius: 100px;
+  width: 188px;
+  height: 75px;
+  text-align: center;
+  padding-top: 25px;
+  background-image: url(./sign-up.svg);
+  cursor: pointer;
+  background-color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.first-section-left a {
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #111111;
+}
+
+.first-section-right img {
+  width: 354px;
+  height: 519px;
+}
+
+.first-section {
+  width: 100%;
+}
+
+.first-section-left {
+  width: 50%;
+}
+
+.first-section-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.first-section-right::before {
+  content: "";
+  position: absolute;
+  background-image: url(./nft-logo-before.svg);
+  background-size: 800px 800px;
+  width: 800px;
+  height: 800px;
+  right: -30%;
+  top: -20%;
+  z-index: -10;
+}
+
+.first-section-right::after {
+  content: "";
+  position: absolute;
+  background-image: url(./nft-logo-after.svg);
+  background-size: 500px 500px;
+  width: 500px;
+  height: 500px;
+  right: 25%;
+  top: 30%;
+  z-index: -10;
+}
+
+.first-section-wrapper {
+  display: flex;
+  margin-top: 150px;
+  gap: 60px;
+}
+
+.second-section-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.second-section-left {
+  background-image: url(./second-section-background.svg);
+  width: 100%;
+  height: 320px;
+  border-radius: 16px;
+  margin-top: 182px;
+  margin-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 64px;
+  padding-top: 100px;
+}
+
+h2 {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 40px;
+  color: #111111;
+  margin-bottom: 10px;
+}
+
+.second-section-p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #111111;
+}
+
+.second-section-right {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.third-section {
+  margin-top: 100px;
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+.third-section-right {
+  display: flex;
+  margin-top: 50px;
+  gap: 40px;
+}
+
+.card {
+  background-color: #eeeeee;
+  width: calc(100% / 4);
+  border-radius: 16px;
+}
+
+.card-logo img {
+  width: 100%;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-content-left {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.card-content-right {
+  display: flex;
+  flex-direction: column;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: right;
+}
+
+.red-text {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: rgb(253, 150, 102);
+  margin-bottom: 8px;
+}
+
+.bold-text {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 19px;
+  color: #111111;
+  margin-bottom: 8px;
+}
+
+.bold-text img {
+  margin-right: 8px;
+}
+
+.gray-uppercase-text {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #777777;
+  margin-bottom: 8px;
+}
+
+.gray-text {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  color: #777777;
+}
+
+.fourth-section {
+  margin-top: 100px;
+}
+
+.fourth-section-wrapper {
+  display: flex;
+}
+
+.fourth-section-left {
+  width: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.fourth-section-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  font-family: "Inter";
+  font-weight: 900;
+  font-size: 56px;
+  color: #111111;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.straight-line {
+  width: 100%;
+  display: flex;
+  margin-bottom: 85px;
+}
+
+.main-footer-wrapper {
+  display: flex;
+}
+
+.footer-social-media {
+  display: flex;
+}
+
+.social {
+  margin-right: 15px;
+}
+
+.footer-left {
+  width: 50%;
+}
+
+.footer-right {
+  width: 50%;
+  display: flex;
+  justify-content: right;
+}
+
+.side-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  color: #999999;
+}
+
+.footer-right ul {
+  list-style-type: none;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  color: #555555;
+}
+
+.footer-right a {
+  text-decoration: none;
+}
+
+.title {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #555555;
+}
+
+.footer-right ul li {
+  margin-bottom: 28px;
+  margin-left: 70px;
+}
